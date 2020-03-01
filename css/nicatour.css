@@ -1,0 +1,422 @@
+
+body{
+	margin: 0;
+}
+
+.contenedorPrincipal{
+	padding-top: 88px
+}
+
+.carousel-wrapper{
+	position: relative;
+	height: 550px;
+	width: 100%;
+}
+
+.carousel-wrapper .carousel-item{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: all 0.5s ease-in-out
+}
+.carousel-wrapper .carousel-item .arrow {
+	position: absolute;
+	top: 40%;
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: url("../images/arrow.png") 50% 50%/20px no-repeat;
+}
+.carousel-wrapper .carousel-item .arrow.arrow-prev {
+	left: 0;
+}
+.carousel-wrapper .carousel-item .arrow.arrow-next {
+	right: 0;
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.carousel-wrapper [id^="target-item"] {
+	display: none;
+}
+
+.carousel-wrapper .item-1{
+	opacity: 1;
+	z-index: 2;
+}
+.carousel-wrapper *:target ~ .item-1{
+	opacity: 0;
+}
+
+.carousel-wrapper #target-item-1:target ~ .item-1,
+.carousel-wrapper #target-item-6:target ~ .item-1,
+.carousel-wrapper #target-item-10:target ~ .item-1,
+.carousel-wrapper #target-item-14:target ~ .item-1,
+.carousel-wrapper #target-item-19:target ~ .item-1,
+.carousel-wrapper #target-item-24:target ~ .item-1{
+	opacity: 1;
+}
+
+/*primer carousel*/
+.carousel-wrapper #target-item-2:target ~ .item-2,
+.carousel-wrapper #target-item-3:target ~ .item-3,
+.carousel-wrapper #target-item-4:target ~ .item-4,
+.carousel-wrapper #target-item-5:target ~ .item-5 {
+	z-index: 3;
+	opacity: 1;
+}
+/*Segundo carousel*/
+.carousel-wrapper #target-item-7:target ~ .item-2,
+.carousel-wrapper #target-item-8:target ~ .item-3,
+.carousel-wrapper #target-item-9:target ~ .item-4{
+	z-index: 3;
+	opacity: 1;
+}
+
+/*Tercer carousel*/
+.carousel-wrapper #target-item-11:target ~ .item-2,
+.carousel-wrapper #target-item-12:target ~ .item-3,
+.carousel-wrapper #target-item-13:target ~ .item-4{
+	z-index: 3;
+	opacity: 1;
+}
+/*Cuarto carousel*/
+.carousel-wrapper #target-item-15:target ~ .item-2,
+.carousel-wrapper #target-item-16:target ~ .item-3,
+.carousel-wrapper #target-item-17:target ~ .item-4,
+.carousel-wrapper #target-item-18:target ~ .item-5 {
+	z-index: 3;
+	opacity: 1;
+}
+/*Quinto carousel*/
+.carousel-wrapper #target-item-20:target ~ .item-2,
+.carousel-wrapper #target-item-21:target ~ .item-3,
+.carousel-wrapper #target-item-22:target ~ .item-4,
+.carousel-wrapper #target-item-23:target ~ .item-5 {
+	z-index: 3;
+	opacity: 1;
+}
+/*Sexto carousel*/
+.carousel-wrapper #target-item-25:target ~ .item-2,
+.carousel-wrapper #target-item-26:target ~ .item-3,
+.carousel-wrapper #target-item-27:target ~ .item-4,
+.carousel-wrapper #target-item-28:target ~ .item-5 {
+	z-index: 3;
+	opacity: 1;
+}
+
+
+.carousel-wrapper img{
+	width: 100%;
+	height: 100%;
+}
+
+.carousel-wrapper .carousel-item figcaption{
+	position: absolute;
+	bottom: 0;
+	color: white;
+	opacity: 0.6;
+	width: 100%;
+	background-color: black;
+}
+
+.carousel-wrapper .carousel-item figcaption h5{
+	font-size: 20px;
+	padding: 2px;
+}
+
+/*Menu*/
+
+.menubar{
+	background-color: #EF7D00;
+	width: 90%;
+	margin: 0 auto;
+	position: fixed;
+	right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+	z-index: 100;
+	box-shadow: 6px 6px 8px rgba(0,0,0,0.5);
+}
+
+ul{
+	list-style-type: none;
+}
+
+.menubar ul{
+	text-align: center;
+	padding: 15px;
+}
+
+.menubar ul li{
+	display: inline-block;
+}
+
+.menubar ul li a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 5px 28px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.menubar ul li:hover{
+	background-color: white;
+}
+
+.menubar ul li a:hover{
+	color: #72ADD5;
+}
+
+/*nicatour*/
+
+.logotipo{
+	text-align: center;
+	color: #72ADD5;
+	font-size: 56px;
+    font-family: 'Carter One';
+    font-weight: 400;
+	margin: 0;
+}
+
+.logotipo span{
+	color: #EF7D00;
+}
+
+/*Servicios*/
+.main{
+	position: relative;
+	background-color: #0071BC;
+	margin-top: 10px;
+	text-align: center;
+	color: white;
+	height: 713px;
+}
+
+.main h3{
+	text-align: center;
+	font-size: 30px;
+	font-size: 36px;
+    margin: 0;
+	color: white;
+}
+
+.main #planea{
+	float: left;
+	display: block;
+	width: 50%;
+}
+
+.main #viaja{
+	float: right;
+	display: block;
+	width: 50%;
+}
+
+.main #disfruta{
+	float: left;
+	display: block;
+	width: 50%;
+}
+
+.main #siguienteplan{
+	float: right;
+	display: block;
+	width: 50%;
+}
+
+.main h4{
+	font-weight: bold;
+	font-size: 21px;
+}
+
+.main p{
+	font-size: 18px;
+}
+
+/*Departamentos */
+#departamentos {
+	color: white;
+}
+
+#departamentos article h3{
+	text-align: center;
+	font-size: 30px;
+	font-size: 36px;
+    margin: 0;
+	color: white;
+}
+
+#carazo{
+	height: 713px;
+	background-color: #C94625;
+	
+}
+
+#carazo p{
+	float: left;
+	display: block;
+	width: 50%;
+	text-align: left;
+	position: absolute;
+	left: 150px;
+	font-size: 18px;
+    line-height: 25px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+#carazo .carousel-wrapper{
+	float: right;
+	display: block;
+	width: 50%;
+	height: 400px;
+}
+
+
+#granada{
+	height: 713px;
+	background-color: #F8AA00;
+	
+}
+
+#granada p{
+	float: right;
+	display: block;
+	width: 50%;
+	text-align: left;
+	font-size: 18px;
+    line-height: 25px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+#granada .carousel-wrapper{
+	float: left;
+	display: block;
+	width: 50%;
+	height: 400px;
+}
+
+
+#leon{
+	height: 713px;
+	background-color: #96C45B;
+	
+}
+
+#leon p{
+	float: left;
+	display: block;
+	width: 50%;
+	text-align: left;
+	position: absolute;
+	left: 150px;
+	font-size: 18px;
+    line-height: 25px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+#leon .carousel-wrapper{
+	float: right;
+	display: block;
+	width: 50%;
+	height: 400px;
+}
+
+
+#matagalpa{
+	height: 713px;
+	background-color: #96073A;
+	
+}
+
+#matagalpa p{
+	float: right;
+	display: block;
+	width: 50%;
+	text-align: left;
+	font-size: 18px;
+    line-height: 25px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+#matagalpa .carousel-wrapper{
+	float: left;
+	display: block;
+	width: 50%;
+	height: 400px;
+}
+
+#cornisland{
+	height: 713px;
+	background-color: chocolate;
+	
+}
+
+#cornisland p{
+	float: left;
+	display: block;
+	width: 50%;
+	text-align: left;
+	position: absolute;
+	left: 129px;
+	font-size: 18px;
+    line-height: 25px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+#cornisland .carousel-wrapper{
+	float: right;
+	display: block;
+	width: 50%;
+	height: 400px;
+}
+
+.contacto{
+	padding: 40px 0;
+	background-color: teal;
+}
+
+.contacto div h3{
+	text-align: center;
+	font-size: 30px;
+	font-size: 36px;
+    margin: 0;
+	color: white;
+}
+
+.contacto ul{
+	margin: 0 auto;
+	width: 50%;
+	text-align: center;
+	padding: 0;
+}
+.contacto ul li label{
+	display: block;
+	text-align: left;
+	color: white;
+	font-size: 17px;
+}
+
+.contacto ul li input, .contacto ul li textarea{
+	display: block;
+	width: 100%;
+}
+
+footer{
+	background-color: gray;
+	color: white;
+	padding: 40px 0;
+	text-align: center;
+}
+
+footer h4{
+	font-size: 20px;
+}
+
+footer h5{
+	font-size: 18px;
+}
